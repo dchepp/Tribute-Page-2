@@ -1,0 +1,131 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: 0;
+}
+
+body{
+font-family: 'Lato', sans-serif;
+line-height: 1.5;
+text-align: center;
+}
+
+img{
+  width:100%;
+  height: auto;
+}
+
+.btn{
+  display: inline-block;
+  color: yellow;
+  text-decoration: none;
+  border: 3px solid yellow;
+  padding:.5rem;  
+  margin: 1rem 0;
+}
+
+.btn:hover{
+  background: yellow;
+  color: gray;
+  font-weight: bold;
+}
+
+.link{
+  text-decoration: none;
+}
+/*header*/
+
+#showcase{
+min-height: 450px;
+}
+
+#showcase .bg-image {
+    position: absolute;
+   background: #eee url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Gandhi_spinning.jpg/1280px-Gandhi_spinning.jpg") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+  z-index: -1;
+  opacity: .4;
+}
+
+#showcase h1, #showcase h2{
+color: yellow;
+text-shadow: 2px 2px black;
+}
+
+#showcase h1{
+  padding-top: 100px;
+  border-bottom: 5px solid #fff;
+  display: inline-block;
+}
+
+#showcase h2{
+  font-size: 1.2rem;
+}
+
+#showcase p{
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px #eee;
+  margin: 1rem;
+}
+
+/*section A*/
+
+#section-a{
+  background-color: #eee;
+  text-align: left;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+
+.quote {
+  border-top: 3px solid black;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  padding: 1rem 0;
+   text-align: center;
+}
+
+/*media queries*/
+@media(min-width: 700px){
+  .grid{
+    display: grid;
+    grid-template-columns:1fr repeat(2, min-max(auto, 30rem)) 1fr;
+  }
+
+ 
+    #showcase .bg-image {
+    background-attachment: fixed;
+  }
+  
+   #section-a{
+    margin: 1.5rem 27rem;
+    padding: 2rem  3rem;
+  }
+  
+   .quote {
+     border-top: none;
+  border-left: 2px solid black;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  padding: 1rem;
+   text-align: left;
+}
+
+  .quote h3, #main-footer{
+    font-size: .8rem;
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  #section-a > p{
+    text-align: center;
+  }
+  
+  
+}
